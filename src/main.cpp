@@ -1,5 +1,6 @@
 #include <M5StickCPlus.h>
 #include <BleKeyboard.h>
+#include <pass.h>
 
 //画面の大きさ　縦135, 横240
 
@@ -64,7 +65,7 @@ void sendCommand(){
     bleKeyboard.releaseAll();
     delay(200);
     M5.update();
-    if(M5.BtnA.isPressed()) bleKeyboard.println("C[c9hzdp76");  //@はキーコードの関係上[であらわす
+    if(M5.BtnA.isPressed()) bleKeyboard.println(myPcPass);
 
   }else if(modelist[mode] == "sleep"){
     bleKeyboard.press(KEY_LEFT_GUI);

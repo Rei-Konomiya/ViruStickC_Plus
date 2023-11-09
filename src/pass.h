@@ -1,0 +1,1 @@
+String myPcPass = "C[c9hzdp76";  //@はキーコードの関係上[であらわす

@@ -393,50 +393,6 @@ void sendCommand(){
   }else if(modelist[mode] == "M:Mix treat"){
     while(M5.BtnA.isPressed()) M5.update();
     bleKeyboard.press(KEY_LEFT_GUI);
-    bleKeyboard.print("i");
-    delay(500);
-    bleKeyboard.press(KEY_LEFT_SHIFT);
-    bleKeyboard.write(KEY_RETURN);
-    bleKeyboard.releaseAll();
-    delay(1000);
-    bleKeyboard.write(KEY_TAB);
-    bleKeyboard.write(KEY_RETURN);
-    bleKeyboard.write(KEY_DOWN_ARROW);
-    delay(200);
-    bleKeyboard.press(KEY_LEFT_SHIFT);
-    for(int i=0; i<5; i++) bleKeyboard.write(KEY_TAB);
-    bleKeyboard.releaseAll();
-    for(int i=0; i<4; i++) bleKeyboard.write(KEY_DOWN_ARROW);
-    bleKeyboard.write(KEY_RETURN);
-    delay(200);
-    bleKeyboard.write(KEY_RETURN);
-    bleKeyboard.write(KEY_DOWN_ARROW);
-    bleKeyboard.
-write(KEY_RETURN);
-    delay(500);
-    bleKeyboard.press(KEY_LEFT_ALT);
-    bleKeyboard.write(KEY_LEFT_ARROW);
-
-
-
-  
-bleKeyboard.releaseAll();
-    delay(200);
-    for(int i=0; i<3; i++) bleKeyboard.write(KEY_TAB);
-    delay(200);
-
-
-    for(int i=0; i<5; i++) bleKeyboard.write(KEY_DOWN_ARROW);
-
-    bleKeyboard.write(KEY_RETURN);
-    delay(200);
-    bleKeyboard.print(" ");
-    delay(200);
-    bleKeyboard.press(KEY_LEFT_ALT);
-    bleKeyboard.write(KEY_F4);
-    bleKeyboard.releaseAll();
-    
-    bleKeyboard.press(KEY_LEFT_GUI);
     bleKeyboard.write(KEY_NUM_PLUS);
     for(int i=0; i<10; i++){
       bleKeyboard.write(KEY_NUM_MINUS);
